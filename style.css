@@ -1,0 +1,55 @@
+* {
+    margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif;
+}
+body {
+    background: linear-gradient(135deg,#0d0d0d,#1b1b1b,#222);
+    color:#e6e6e6;
+    overflow-x:hidden;
+}
+/* Loader */
+#loader {
+    position: fixed;
+    width:100%; height:100vh;
+    background:#0d0d0d;
+    display:flex; justify-content:center; align-items:center;
+    z-index:9999;
+}
+.spin {
+    width:65px; height:65px;
+    border:6px solid rgba(255,255,255,0.3);
+    border-top-color:#9d4edd;
+    border-radius:50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Glassmorphism */
+.glass-box {
+    background: rgba(255,255,255,0.08);
+    border-radius:18px;
+    padding:25px;
+    border:1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(15px);
+    box-shadow:0 5px 18px rgba(0,0,0,0.45);
+    animation: fade 0.9s ease-in-out;
+}
+.glass-box:hover { transform: translateY(-5px); box-shadow:0 10px 25px rgba(0,0,0,0.55);}
+@keyframes fade { from{opacity:0; transform:translateY(15px);} to{opacity:1; transform:translateY(0);} }
+
+.btn-glass {
+    background: rgba(255,255,255,0.08);
+    color:#fff;
+    border:1px solid rgba(255,255,255,0.18);
+}
+.btn-glass:hover { background: rgba(255,255,255,0.12); }
+
+.highlight { color:#bb86fc; font-weight:600; }
+
+.credit {
+    margin-top:40px;
+    padding:10px 0;
+    text-align:center;
+    color:#b1b1b1;
+    font-size:14px;
+}
+.credit a { color:#bb86fc; text-decoration:none; font-weight:600; }
