@@ -24,10 +24,10 @@ Developed using **HTML, CSS, JavaScript, PHP, and MySQL** with a clean interface
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.png)
 
 ### Proposal Form
-![Form](./screenshots/form.png)
+![Form](screenshots/form.png)
 
 > Create a folder named `screenshots` in the repo and add the images with the same names.
 
